@@ -1,0 +1,129 @@
+/* Disable 300 millisecond delay in IE */
+html{touch-action:manipulation;-ms-touch-action:manipulation}
+
+/* Normalize *
+/* [type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText};outline-offset:-2px;h1{margin:.67em 0} */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+/* Semantic UI reset */
+*,*:before,*:after{box-sizing:inherit}html{box-sizing:border-box}input[type="text"],input[type="email"],input[type="search"],input[type="password"]{-webkit-appearance:none;-moz-appearance:none}
+
+
+h1,h2,h3,h4,h5,h6 { padding-top: 0; margin-top: 0 }
+html,body,div#root { position: relative; }
+body {
+  overflow-y: scroll;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.4px;
+  line-height: 2;
+}
+
+
+h1#site-title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+}
+@media (max-width: 550px) {
+  h1#site-title {
+    margin-bottom: 2rem;
+  }
+}
+
+h2#site-strapline {
+  display: none;
+}
+
+/* The following take effect if the strapline is visible: */
+h2#site-strapline {
+  line-height: 2rem;
+}
+@media (max-width: 550px) {
+  h2#site-strapline {
+    margin-top: -2rem;
+  }
+}
+
+
+/* Grid, kudos https://css-tricks.com/dont-overthink-flexbox-grids/ */
+
+.grid { display: flex }
+.col { flex: 1 }
+@media (max-width: 550px) {
+  .grid {
+    display: block
+  }
+}
+
+
+/* Padding, spacing etc */
+
+.page-wrapper, #nav-menu, .nav-menu-item {
+  margin: 0 auto;
+}
+
+.page-wrapper, #nav-menu {
+  width: 100%;
+}
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.page-wrapper {
+  padding: 1rem;
+  max-width: 60rem;
+}
+
+#nav {
+  width: 100%;
+}
+
+#nav-menu {
+  padding: 0;
+}
+
+.nav-menu-item {
+  display: inline-block;
+  list-style: none;
+  line-height: 1.15
+}
+
+.nav-menu-item {
+  margin-right: 1rem;
+}
+.nav-menu-item:last-child {
+  margin-right: 0;
+}
+@media (max-width: 550px) {
+  .nav-menu-item:first-child {
+    margin-left: 0
+  }
+}
+
+
+/* The list of edits that appears at the foot of some pages. */
+
+.previous-versions {
+  font-size: 0.8rem;
+}
+
+.previous-versions ul, .previous-versions li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.previous-versions a {
+  text-decoration: none;
+}
+
+.previous-versions ul, .previous-versions li, .previous-versions a {
+  line-height: 2.5;
+}
+@media (min-width: 551px) {
+  .previous-versions ul, .previous-versions li, .previous-versions a {
+    line-height: 1.15;
+  }
+}
